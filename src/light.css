@@ -1,0 +1,101 @@
+/*
+Copyright Light Framework Team 2016
+*/
+*{
+box-sizing:border-box;
+}
+a {
+
+text-decoration:none;
+color:unset;
+}
+body {
+    transition: background-color .5s;
+font-family:Trebuchet MS;
+overflow-x:hidden;
+width:100%;
+margin:0;
+}
+/* Defaults */
+button{
+background:transparent;
+color:black;
+border:1.6px solid silver;
+padding:.5rem;
+border-radius:3px;
+}
+/*Light Menu */
+#lmenu {
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    background-color: #385dbc;
+    position: fixed;
+    z-index: 3;
+color:white;
+    overflow-x: hidden;
+    transition: .5s;
+    padding-top: 60px;
+}
+.open:before{
+width: 2rem;
+    height: 0;
+    color: white;
+    border: 0.09rem solid white;
+    content: '';
+    border-left: 0;
+    border-right: 0;
+    float: left;
+
+
+}
+.open{
+border:.18rem solid white;
+border-right: 0;
+
+border-left: 0;
+
+border-radius: 0;
+
+width: 2rem;
+
+padding: 0;
+
+height: 1.2rem;
+}
+.logo{
+float:right;
+color:white;
+font-size:1rem;
+padding:3px;
+border:1.5px solid white;
+}
+menu{
+width:100%;
+display:table;
+background:#1e46af;
+padding:2px;
+margin:0;
+
+
+}
+#lmenu a{
+    padding:1rem;
+    display: block;
+    transition: .3s;
+}
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+#mainContent {
+    transition: margin-left .5s;
+}
+@media screen and (max-height: 500px) {
+  #lmenu {padding-top:15px;}
+  #lmenu a {font-size: 18px;}
+}
